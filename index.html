@@ -24,7 +24,7 @@
         </div>
         <div class="score-item">
             <div class="score-label">Goal</div>
-            <div class="score-value">20</div>
+            <div class="score-value" id="goal">40</div>
         </div>
     </div>
 
@@ -37,6 +37,11 @@
     </div>
 
     <div class="controls">
+        <select id="difficultySelect" class="difficulty-select">
+            <option value="easy">Easy</option>
+            <option value="medium" selected>Medium</option>
+            <option value="hard">Hard</option>
+        </select>
         <button class="btn btn-start" id="startBtn">Start Game</button>
         <button class="btn btn-reset" id="resetBtn">Reset</button>
     </div>
@@ -49,4 +54,9 @@
         </div>
     </div>
 </body>
+<footer class="footer">
+    <p>&copy; 2025 Water Drop Collector Game. Help bring clean water to communities!</p>
+    <a href="https://www.charitywater.org/" class="link">Learn more about charity: water</a>
+    <a href="https://www.charitywater.org/the-spring/direct?utm_content=branded&msclkid=48dd04456e231193eb6c6cb7295ea55a" class="link">Donate Here</a>
+</footer>
 </html>

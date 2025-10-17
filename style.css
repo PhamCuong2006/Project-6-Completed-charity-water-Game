@@ -22,7 +22,8 @@ body {
 
 .logo {
     color: #fdd33d;
-    font-size: 2rem;
+    font-family: Baskerville, serif;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -30,13 +31,15 @@ body {
 
 .tagline {
     color: white;
-    font-size: 1rem;
+    font-family: Baskerville, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
     margin-bottom: 5px;
 }
 
 .score-board {
     background: white;
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     display: flex;
@@ -66,7 +69,7 @@ body {
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 500px;
+    height: 380px; 
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     border: 3px solid white;
@@ -163,6 +166,30 @@ body {
 .btn-reset {
     background: #fdd33d;
     color: #0c4da2;
+}
+
+.difficulty-select {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #0c4da2;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 15px;  /* Align with other controls */
+}
+
+.difficulty-select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.difficulty-select:focus {
+    outline: none;
+    border: 2px solid #fdd33d;
 }
 
 .celebration {
@@ -289,4 +316,34 @@ body {
     .celebration h2 {
         font-size: 2rem;
     }
+
+    .difficulty-select {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0c4da2;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.2rem;
+}
+
+.footer .link {
+    font-size: 1.2rem;
+    color: #3dfdc7;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
