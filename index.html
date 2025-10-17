@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charity: water Drop Collector</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">charity: water</div>
+        <div class="tagline">Collect clean water drops!</div>
+    </div>
+
+    <div class="score-board">
+        <div class="score-item">
+            <div class="score-label">Score</div>
+            <div class="score-value" id="score">0</div>
+        </div>
+        <div class="score-item">
+            <div class="score-label">Timer</div>
+            <div class="score-value" id="timer">30</div>
+        </div>
+        <div class="score-item">
+            <div class="score-label">Goal</div>
+            <div class="score-value">20</div>
+        </div>
+    </div>
+
+    <div class="game-container" id="gameContainer">
+        <div class="bucket" id="bucket"></div>
+        <div class="game-over" id="gameOver">
+            <h3>Game Over!</h3>
+            <p>Click Reset to try again</p>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-start" id="startBtn">Start Game</button>
+        <button class="btn btn-reset" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="celebration" id="celebration">
+        <div class="celebration-content">
+            <h2>🎉 You Win! 🎉</h2>
+            <p>You collected 50 clean water drops!</p>
+            <p>You're helping bring clean water to communities!</p>
+        </div>
+    </div>
+</body>
+</html>
